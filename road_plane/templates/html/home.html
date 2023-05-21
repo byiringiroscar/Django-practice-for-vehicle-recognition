@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+
+<h3>plate number is : {{plate_number}}</h3>
+
+{% for i in phone_n %}
+{{i.phonenumber}}
+{% endfor%}
+<h3>ben</h3>
+{% for tax in tax_n %}
+
+
+{{tax.tax_status}}
+
+
+
+
+{% endfor %}
+
+<h2>Insurance</h2>
+{% for insu in insu_n %}
+
+        {{insu.car_registration.insurance_status}}
+
+{% endfor %}
+
+<h1>plat</h1>
+
+
+<h1>controlll</h1>
+
+{% for cont in control_n  %}
+        cont.car_registrations
+{% endfor %}
+
+
+
+</body>
+</html>
